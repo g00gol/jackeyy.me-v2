@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const matcha = {
-  text: "#7A7A7A",
-  background: "#FBF9F8",
+  neutral: "#7A7A7A",
+  "base-100": "#FBF9F8",
   primary: "#D2D7C6",
   secondary: "#4F5E50",
 };
@@ -30,5 +30,12 @@ export default {
       bold: "700",
     },
   },
-  plugins: [],
+  daisyui: {
+    themes: [
+      {
+        matcha,
+      },
+    ],
+  },
+  plugins: [require("daisyui")],
 };

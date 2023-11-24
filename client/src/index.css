@@ -7,7 +7,7 @@
 
 @layer base {
   body {
-    @apply font-quicksand bg-background text-text;
+    @apply bg-base-100 text-neutral font-quicksand;
   }
   h1 {
     @apply font-playfair text-3xl font-bold text-secondary;
