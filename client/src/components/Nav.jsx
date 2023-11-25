@@ -12,18 +12,18 @@ export default function Nav() {
     <div className="drawer">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
-        <nav className="navbar bg-base-100 w-full p-8">
+        <nav className="navbar w-full bg-base-100 p-8">
+          <div className="flex-1 font-playfair text-xl font-bold">jy</div>
           <div className="flex-none lg:hidden">
             <label
               htmlFor="my-drawer-3"
               aria-label="open sidebar"
-              className="btn btn-square btn-ghost"
+              className="text-xl"
             >
               <RxHamburgerMenu />
             </label>
           </div>
-          <div className="mx-2 flex-1 px-2">Navbar Title</div>
-          <div className="hidden flex-none space-x-4 lg:block">
+          <div className="text-lg hidden flex-none space-x-4 lg:block">
             <NavItems items={navItems} />
           </div>
         </nav>
@@ -34,7 +34,7 @@ export default function Nav() {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <div className="menu bg-base-200 min-h-full w-80 p-4">
+        <div className="menu min-h-full w-3/4 space-y-8 bg-base-100 p-12 text-xl text-secondary">
           <NavItems items={navItems} />
         </div>
       </div>
