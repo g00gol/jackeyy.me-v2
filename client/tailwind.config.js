@@ -29,6 +29,11 @@ export default {
       normal: "400",
       bold: "700",
     },
+    extend: {
+      transitionProperty: {
+        top: "top",
+      },
+    },
   },
   daisyui: {
     themes: [

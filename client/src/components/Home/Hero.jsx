@@ -14,7 +14,7 @@ export default function Hero() {
   const [imageFixed, setImageFixed] = useState(false);
   const imageRef = useRef(null);
 
-  const maxScroll = 200; // Adjust this value as needed
+  const maxScroll = 200;
   const imageYPos = scrollY < maxScroll ? scrollY * 0.5 : maxScroll * 0.5;
 
   useEffect(() => {
@@ -24,7 +24,7 @@ export default function Hero() {
   return (
     <div className="flex h-screen flex-col">
       <Nav />
-      <section className="grid-auto-fit grid w-full flex-grow gap-8 space-y-8 p-8 pt-0 md:space-y-0">
+      <section className="grid-auto-fit grid w-full flex-grow gap-8 p-8 pt-0">
         <HeroText />
         <HeroImage
           imageYPos={imageYPos}
