@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiDevpost } from "react-icons/si";
 
 import Nav from "../../components/Nav";
-import Image from "../Image";
+import Image from "./Image";
 import useWindowScroll from "../../hooks/useWindowScroll";
 
 import { edhtop16, edhtop16_mobile } from "../../assets";

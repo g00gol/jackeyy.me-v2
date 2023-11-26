@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
 
+/**
+ * Hook to get window scrollY
+ * @returns {number} - window scrollY
+ */
 export default function useWindowScroll() {
   const [scrollY, setScrollY] = useState(window.scrollY);
 
