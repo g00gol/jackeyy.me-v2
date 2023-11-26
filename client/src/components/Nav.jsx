@@ -16,7 +16,7 @@ export default function Nav() {
     const baseClass =
       "fixed navbar w-full bg-base-100 p-8 transition-[top] duration-300";
     const positionClass =
-      scrollY >= 100 ? "left-0 right-0 top-0 z-20" : "invisible -top-32";
+      scrollY >= 100 ? "left-0 right-0 top-0 z-10" : "invisible -top-32";
     return `${baseClass} ${positionClass}`;
   }
 
@@ -33,7 +33,7 @@ export default function Nav() {
         </nav>
       </div>
 
-      <nav className="drawer-side">
+      <nav className="drawer-side z-20">
         <label
           htmlFor="my-drawer-3"
           aria-label="close sidebar"
