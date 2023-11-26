@@ -12,6 +12,12 @@
   h1 {
     @apply font-playfair text-3xl font-bold text-secondary;
   }
+  h2 {
+    @apply font-quicksand text-2xl font-bold text-secondary;
+  }
+  h3 {
+    @apply font-quicksand text-xl font-bold text-neutral;
+  }
 }
 
 @layer components {
