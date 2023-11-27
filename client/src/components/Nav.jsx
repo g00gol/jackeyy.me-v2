@@ -5,7 +5,7 @@ import useWindowScroll from "../hooks/useWindowScroll";
 const navItems = [
   ["projects", "/projects"],
   ["keyboards", "/keyboards"],
-  ["resume", "/resume"],
+  ["about", "/about"],
   ["contact", "/contact"],
 ];
 
