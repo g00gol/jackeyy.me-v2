@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <HomeLayout>
       <Hero />
-      <div className="spaxe-y-4 flex h-screen flex-col items-center justify-center text-3xl">
+      <div className="flex h-screen flex-col items-center justify-center space-y-4 text-3xl">
         <div className="flex w-52 flex-col gap-4">
           <div className="skeleton h-32 w-full"></div>
           <div className="skeleton h-4 w-28"></div>
