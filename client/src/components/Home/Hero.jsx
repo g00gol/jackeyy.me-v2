@@ -9,6 +9,21 @@ import useWindowScroll from "../../hooks/useWindowScroll";
 
 import { edhtop16, edhtop16_mobile } from "../../assets";
 
+const SOCIAL_LINKS = [
+  {
+    icon: <FaGithub />,
+    link: "https://github.com/g00gol",
+  },
+  {
+    icon: <FaLinkedin />,
+    link: "https://www.linkedin.com/in/jackeyy",
+  },
+  {
+    icon: <SiDevpost />,
+    link: "https://devpost.com/g00gol",
+  },
+];
+
 export default function Hero() {
   const scrollY = useWindowScroll();
   const [imageFixed, setImageFixed] = useState(false);
@@ -59,9 +74,11 @@ const HeroText = () => {
 
         <div className="divider">
           <span className="flex space-x-4 text-xl text-secondary">
-            <FaGithub />
-            <FaLinkedin />
-            <SiDevpost />
+            {SOCIAL_LINKS.map(({ icon, link }) => (
+              <a key={link} href={link} target="_blank" rel="noreferrer">
+                {icon}
+              </a>
+            ))}
           </span>
         </div>
       </div>
