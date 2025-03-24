@@ -3,9 +3,8 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import useWindowScroll from "../hooks/useWindowScroll";
 
 const navItems = [
+  ["resume", "/resume.pdf", true],
   ["projects", "/projects"],
-  ["keyboards", "/keyboards"],
-  ["about", "/about"],
   ["contact", "/contact"],
 ];
 
@@ -71,7 +70,7 @@ const NavItems = ({ items }) => {
   return (
     <>
       {items.map((item) => (
-        <a key={item[1]} href={item[1]}>
+        <a key={item[1]} href={item[1]} target={item[2] ? "_blank" : ""}>
           {item[0]}
         </a>
       ))}
