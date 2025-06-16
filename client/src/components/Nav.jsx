@@ -4,7 +4,7 @@ import useWindowScroll from "../hooks/useWindowScroll";
 
 const navItems = [
   // ["contact", "/contact"]
-];
+ ]
 
 export default function Nav() {
   const scrollY = useWindowScroll();
@@ -37,7 +37,7 @@ export default function Nav() {
           className="drawer-overlay"
         ></label>
         <div className="menu min-h-full w-3/4 space-y-8 bg-base-100 p-12 text-xl text-secondary">
-          <NavItems items={navItems} />
+          <NavItems items={LINKS} />
         </div>
       </nav>
     </div>
@@ -60,7 +60,7 @@ const NavContent = () => {
         </label>
       </div>
       <div className="text-lg hidden flex-none space-x-4 lg:block">
-        <NavItems items={navItems} />
+        <NavItems items={LINKS} />
       </div>
     </>
   );
@@ -70,7 +70,7 @@ const NavItems = ({ items }) => {
   return (
     <>
       {items.map((item) => (
-        <a key={item[1]} href={item[1]}>
+        <a key={item[1]} href={item[1]} target={item[2] ? "_blank" : ""}>
           {item[0]}
         </a>
       ))}
