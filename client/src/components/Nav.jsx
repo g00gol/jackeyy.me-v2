@@ -3,10 +3,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import useWindowScroll from "../hooks/useWindowScroll";
 
 const navItems = [
-  ["projects", "/projects"],
-  ["keyboards", "/keyboards"],
-  ["about", "/about"],
-  ["contact", "/contact"],
+  // ["contact", "/contact"]
 ];
 
 export default function Nav() {
@@ -50,7 +47,9 @@ export default function Nav() {
 const NavContent = () => {
   return (
     <>
-      <div className="flex-1 font-playfair text-xl font-bold">jy</div>
+      <a href="/" className="flex-1 font-playfair text-xl font-bold">
+        jy
+      </a>
       <div className="flex-none lg:hidden">
         <label
           htmlFor="my-drawer-3"
