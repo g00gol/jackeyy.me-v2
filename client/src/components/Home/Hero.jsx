@@ -37,7 +37,7 @@ export default function Hero() {
   }, [scrollY]);
 
   return (
-    <div className="flex h-screen flex-col">
+    <div className="flex h-fit min-h-screen flex-col">
       <Nav />
       <section className="grid-auto-fit grid w-full flex-grow gap-8 p-8 pt-0">
         <HeroText />
@@ -92,10 +92,10 @@ const HeroImage = ({ imageYPos, imageFixed, imageRef }) => {
       <Image
         ref={imageRef}
         className="w-full"
-        style={{
-          transform: `translateY(${imageYPos}px)`,
-          position: imageFixed ? "fixed" : "relative",
-        }}
+        // style={{
+        //   transform: `translateY(${imageYPos}px)`,
+        //   position: imageFixed ? "fixed" : "relative",
+        // }}
         src={edhtop16}
         mobileSrc={edhtop16_mobile}
         alt="edhtop16"

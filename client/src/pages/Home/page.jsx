@@ -15,7 +15,7 @@ export default function Home() {
       <Hero />
 
       <section id="projects" className="mt-20 space-y-8">
-        <div className="mx-8 flex justify-between">
+        <div className="grid-auto-fit mx-8 grid">
           <Project
             project={{
               title: "EDHTop16",

@@ -1,6 +1,6 @@
 export default function Project({ project }) {
   return (
-    <div className="card-sm w-96 bg-base-100 shadow-sm">
+    <div className="card-xs md:card-sm w-full bg-base-100 shadow-sm md:w-fit">
       <figure className="h-56 overflow-hidden">
         {project?.image && <img src={project?.image} alt={project?.title} />}
         {project?.video && (
