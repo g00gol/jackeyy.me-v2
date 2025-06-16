@@ -14,7 +14,7 @@ export default function Home() {
     <HomeLayout>
       <Hero />
 
-      <section className="mt-20 space-y-8">
+      <section id="projects" className="mt-20 space-y-8">
         <div className="mx-8 flex justify-between">
           <Project
             project={{

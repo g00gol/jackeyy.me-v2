@@ -65,12 +65,12 @@ const HeroText = () => {
           <br />
           feel free to look around!
         </p>
-        <Link
+        <a
           className="w-fit font-playfair text-xl text-secondary underline"
-          to="projects"
+          href="#projects"
         >
           view projects
-        </Link>
+        </a>
 
         <div className="divider">
           <span className="flex space-x-4 text-xl text-secondary">
